@@ -4,3 +4,35 @@
 .cover-title{
 
 }
+.logo{    
+    span{
+        display: inline-block;
+        line-height: 2 * $spacing;
+        vertical-align: middle;
+        font-weight: 700;
+        &.logo-p1 {
+            color: $primary_color_blue;
+            
+            &.logo-hover{
+                padding-left: $spacing;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                background-color: $primary_color_blue_transp;
+                height: 2 * $spacing;
+                padding-right: $spacing / 5;
+            }
+        }
+        &.logo-p2{
+            color: $primary_color_white; 
+            margin-left: - ($spacing / 5);
+        }
+    }
+}
+h1 {
+    &.hero-title{
+        font-weight: 800;
+        color: $primary_color_white;
+        font-size: 50px;
+    }
+    
+}

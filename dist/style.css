@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -20,35 +25,119 @@ body {
   padding: 0 30px;
 }
 
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blank-space {
+  flex-grow: 1;
+}
+
+.extra-marg {
+  margin: 15px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
 /* File elementi specifici che servono per tutto il sito */
 .btn-default {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.4s;
-  border: 2px solid #048383;
-  border-radius: 2px;
+  transition: background-color 0.4s;
+  border: 2px solid #098081;
+  border-radius: 4px;
   padding: 7.5px 15px;
+  background-color: transparent;
 }
 .btn-default:hover {
-  color: #048383;
+  background-color: #098081;
+  cursor: pointer;
 }
 
 .section-title {
   font-weight: 700;
 }
 
+.logo span {
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: middle;
+  font-weight: 700;
+}
+.logo span.logo-p1 {
+  color: #098081;
+}
+.logo span.logo-p1.logo-hover {
+  padding-left: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: rgba(96, 169, 173, 0.6);
+  height: 30px;
+  padding-right: 3px;
+}
+.logo span.logo-p2 {
+  color: #ffffff;
+  margin-left: -3px;
+}
+
+h1.hero-title {
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 50px;
+}
+
 /* File specifici per varie sezioni del mio sito */
 header {
-  height: 500px;
   background-image: url("../images/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .secondary-nav {
   background-color: #21333E;
-  height: 30px;
+  font-size: 12px;
+  color: #bcbdbd;
 }
 
 .primary-nav {
   height: 60px;
+}
+
+ul {
+  margin-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li:hover {
+  transform: scale(1.2, 1.2);
+}
+ul li a {
+  display: inline-block;
+  padding: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+ul li a i {
+  margin-right: 5px;
+}
+
+.hero {
+  height: 500px;
+}
+.hero .hero-content {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  color: #bcbdbd;
+}
+.hero .hero-content button {
+  margin: 15px 7.5px;
 }

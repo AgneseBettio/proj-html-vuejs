@@ -2,14 +2,32 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: $font_family;
-    font-size: $font_size;
-  }
-  .container {
-      width: 1100px;
-      margin: auto;
-      padding: 0 ($spacing * 2);
-  }
+}
+.bg-img{
+  background-repeat: no-repeat;
+  background-size: 100%;
+}  
+body {
+  font-family: $font_family;
+  font-size: $font_size;
+}
+.container {
+    width: 1100px;
+    margin: auto;
+    padding: 0 ($spacing * 2);
+}
+.d-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blank-space{
+  flex-grow: 1;
+}
+.extra-marg{
+  margin: $spacing;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+}

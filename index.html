@@ -22,18 +22,70 @@
 <body>
     <!-- div.root per collegamento vue -->
     <!-- l'header avrà img bg e diviso in tra sezioni, comprensivo di hero -->
-    <header>
+    <header class="bg-img">
         <nav class="secondary-nav">
-            <div class="container">
-                
+            <div class="container d-flex">
+                <div class="business-hours">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    Open Hours: Mon - Sat 9:00 - 18:00
+                </div>
+                <div class="blank-space">                    
+                </div>
+                <!--  verrà stampata con vue tramite v-for :class x icon -->
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>+1(30512)34-5678</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>hello@example.com</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+               
             </div>
         </nav>
         <!-- link tramite ciclo v-for: a parti main relative -->
         <nav class="primary-nav">
-
+            <div class="container d-flex">
+                <div class="logo-box">
+                    <div class="logo">
+                        <span class="logo-p1 logo-hover">
+                            NEXT
+                        </span>
+                        <span class="logo-p2">
+                            GEN
+                        </span>                        
+                    </div>                    
+                </div>
+                <div class="blank-space">                    
+                </div>
+                <!-- verrà stampata con vue tramite v-for -->
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">team</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                    <button class="btn-default">get in touch</button>
+                </ul>
+            </div>
         </nav>
-        <div class="hero">
-
+        <div class="hero container d-flex">
+            <div class="hero-content">
+                <h1 class="hero-title extra-marg">Financial Risk</h1>
+                <p class="extra-marg">The right outcomes depend on continuous rigor in governance, models, and processes across the finance function. </p>
+                <button class="btn-default">get in touch</button>
+                <button class="btn-default">read more</button>
+            </div>
         </div>
     </header>
     <!-- main: comprende 7 sezioni riconoscibili da titolo composto da nome sezione con cover -->

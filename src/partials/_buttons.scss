@@ -2,12 +2,14 @@
     text-transform: uppercase;
     color: $primary_color_white;
     text-decoration: none;
-    transition: color $transition_duration;
+    transition: background-color $transition_duration;
     border: 2px solid $primary_color_blue;
     border-radius: $sm-radius;
     padding: ($spacing/2) $spacing;
+    background-color: transparent;
 
     &:hover {
-        color: $primary_color_blue;
+        background-color: $primary_color_blue;
+        cursor: pointer;
     }
 }

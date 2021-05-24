@@ -2,8 +2,10 @@
 /* Variabili necessarie colori: */
 $primary_color_white: #ffffff;
 $primary_color_dark: #111117;
-$primary_color_blue: #048383;
+$primary_color_blue: #098081;
 $secondary_color_dark: #21333E;
+$primary_color_blue_transp: rgba(96, 169, 173, 0.6);
+$secondary_color_white: #bcbdbd;
 
 /* Spaziatura per padding e margin */
 $spacing: 15px;
@@ -16,5 +18,5 @@ $font_size: 16px;
 $transition_duration: 0.4s;
 
 /* border-radius */
-$sm-radius: 2px;
-$lg-radius: 6px;
+$sm-radius: 4px;
+$lg-radius: 8px;
