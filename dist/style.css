@@ -40,8 +40,8 @@ body {
 
 /* File specifici per varie sezioni del mio sito */
 header {
-  background-image: url(/images/bg-2.jpg?a2ac82e65712099e9d3a4471219ba2e1);
   height: 500px;
+  background-image: url("../img/bg-2.jpg");
 }
 
 .secondary-nav {
