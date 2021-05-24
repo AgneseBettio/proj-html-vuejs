@@ -41,7 +41,7 @@ body {
 /* File specifici per varie sezioni del mio sito */
 header {
   height: 500px;
-  background-image: url("../img/bg-2.jpg");
+  background-image: url("../images/bg-2.jpg");
 }
 
 .secondary-nav {
