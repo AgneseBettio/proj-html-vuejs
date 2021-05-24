@@ -1,0 +1,11 @@
+header{
+    background-image: url("../../public/img/bg-2.jpg");
+    height: 500px;
+}
+.secondary-nav{
+    background-color: $secondary_color_dark;
+    height: $spacing * 2;
+}
+.primary-nav{
+    height: ($spacing * 2) * 2;   
+}

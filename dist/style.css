@@ -2,9 +2,53 @@
 /* Variabili necessarie colori: */
 /* Spaziatura per padding e margin */
 /*font*/
-.secondary-nav {
-  color: #048383;
+/* border-radius */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+  padding: 0 30px;
 }
 
 /* File elementi specifici che servono per tutto il sito */
+.btn-default {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.4s;
+  border: 2px solid #048383;
+  border-radius: 2px;
+  padding: 7.5px 15px;
+}
+.btn-default:hover {
+  color: #048383;
+}
+
+.section-title {
+  font-weight: 700;
+}
+
 /* File specifici per varie sezioni del mio sito */
+header {
+  background-image: url(/images/bg-2.jpg?a2ac82e65712099e9d3a4471219ba2e1);
+  height: 500px;
+}
+
+.secondary-nav {
+  background-color: #21333E;
+  height: 30px;
+}
+
+.primary-nav {
+  height: 60px;
+}
