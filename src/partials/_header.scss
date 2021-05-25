@@ -34,13 +34,10 @@ ul {
     }
     
 }
-.hero{
-    height: 500px;
-    .hero-content{
-        margin: auto;
-        width: 50%;
-        text-align: center;
-        color: $secondary_color_white;
+.hero {
+    min-height: 450px;
+    .centered-content{
+    color: $secondary_color_white;
         button{
             margin: $spacing ($spacing / 2);
         }

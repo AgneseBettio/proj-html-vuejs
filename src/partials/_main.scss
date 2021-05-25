@@ -1,0 +1,44 @@
+// section 1 : PERFORMANCE
+.performance{
+    .video-box{
+        position: relative;
+        margin: auto;
+        width: 60%;
+        max-height: 350px;
+        padding: 2* $spacing;
+        
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: $sm-radius;
+        }
+        .play-icon{
+            position: absolute;
+            display: inline-block;
+            width: 3 * $spacing;
+            height: 3 * $spacing;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $primary_color_blue_transp;
+            &.hover-icon{
+                color: $secondary_color_blue;
+                transform: translate(-45%, -43%);
+
+            }
+            &:hover{
+                cursor: pointer;
+            }
+            i {
+                font-size: 2 * $font_size;
+            }
+           
+        }
+    }
+}
+//section 2 : RESULTS
+.results{
+    background-image: url('../images/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

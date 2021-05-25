@@ -16,6 +16,9 @@ body {
     margin: auto;
     padding: 0 ($spacing * 2);
 }
+section{
+  padding: 2 * $spacing;
+}
 .d-flex{
   display: flex;
   justify-content: center;
@@ -27,7 +30,19 @@ body {
 .extra-marg{
   margin: $spacing;
 }
-.col{
+.centered-content{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: (2 * $spacing) 0;
+
+}
+.row {
   display: flex;
-  flex-direction: column;
+  margin: 0 (-($spacing / 2));
+  justify-content: center;
+
+  [class^="col-"] {
+    padding: 0 ($spacing / 2);
+  }
 }

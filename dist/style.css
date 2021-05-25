@@ -25,6 +25,10 @@ body {
   padding: 0 30px;
 }
 
+section {
+  padding: 30px;
+}
+
 .d-flex {
   display: flex;
   justify-content: center;
@@ -39,9 +43,20 @@ body {
   margin: 15px;
 }
 
-.col {
+.centered-content {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.row {
   display: flex;
-  flex-direction: column;
+  margin: 0 -7.5px;
+  justify-content: center;
+}
+.row [class^=col-] {
+  padding: 0 7.5px;
 }
 
 /* File elementi specifici che servono per tutto il sito */
@@ -58,10 +73,6 @@ body {
 .btn-default:hover {
   background-color: #098081;
   cursor: pointer;
-}
-
-.section-title {
-  font-weight: 700;
 }
 
 .logo span {
@@ -90,6 +101,32 @@ h1.hero-title {
   font-weight: 800;
   color: #ffffff;
   font-size: 50px;
+}
+h1.section-title {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+section h4 {
+  text-transform: uppercase;
+  color: #098081;
+  font-size: 12px;
+}
+section .section-title span {
+  display: inline-block;
+}
+section .section-title span.hover-title {
+  position: relative;
+  padding: 7.5px;
+  border-radius: 4px;
+}
+section .section-title span.light {
+  background-color: #DAECED;
+  color: #098081;
+}
+section .section-title span.dark {
+  background-color: rgba(96, 169, 173, 0.6);
+  color: #ffffff;
 }
 
 /* File specifici per varie sezioni del mio sito */
@@ -130,14 +167,51 @@ ul li a i {
 }
 
 .hero {
-  height: 500px;
+  min-height: 450px;
 }
-.hero .hero-content {
-  margin: auto;
-  width: 50%;
-  text-align: center;
+.hero .centered-content {
   color: #bcbdbd;
 }
-.hero .hero-content button {
+.hero .centered-content button {
   margin: 15px 7.5px;
+}
+
+.performance .video-box {
+  position: relative;
+  margin: auto;
+  width: 60%;
+  max-height: 350px;
+  padding: 30px;
+}
+.performance .video-box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
+.performance .video-box .play-icon {
+  position: absolute;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(96, 169, 173, 0.6);
+}
+.performance .video-box .play-icon.hover-icon {
+  color: #DAECED;
+  transform: translate(-45%, -43%);
+}
+.performance .video-box .play-icon:hover {
+  cursor: pointer;
+}
+.performance .video-box .play-icon i {
+  font-size: 32px;
+}
+
+.results {
+  background-image: url("../imgages/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
