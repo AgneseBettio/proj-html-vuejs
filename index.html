@@ -22,7 +22,7 @@
 <body>
     <!-- div.root per collegamento vue -->
     <!-- l'header avrà img bg e diviso in tra sezioni, comprensivo di hero -->
-    <header class="bg-img">
+    <header>
         <nav class="secondary-nav">
             <div class="container d-flex">
                 <div class="business-hours">
@@ -161,30 +161,297 @@
                         <h1>Services</h1>
                     </span>
                 </div>
-                <div class="row">
-                    <div class="col-7">
-
+                <div class="row ">
+                    <div class="col-8">
+                        <p>we are leaders in providing consultancing services with a set of cutting-edge technologies and a team of experienced and renowed professionals. There are some options that you can hire.</p>
                     </div>
-                    <div class="blank-space">
-                        <!-- flex grow 2 -->
+                    <div class="col-4 btn-box">
+                        <button class="btn-default">see all</button>
                     </div>
-                    <div class="col-4">
-                        <button class="btn-default"></button>
+                </div>
+                <div class="row wrap-col">
+                    <div class="col-4 d-flex ">
+                        <div class="card">
+                            <div class="card-text">
+                                <i class="fa fa-sitemap" aria-hidden="true"></i>
+                                <p>Audit and Assurance</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="card-i">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="col-4 d-flex wrap-col">
+                        <div class="card">
+                            <div class="card-text">
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                <p>Financial Advisoring</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="card-i">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="col-4 d-flex wrap-col">
+                        <div class="card">
+                            <div class="card-text">
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                <p>Analytics and M&Aand</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="card-i">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="col-4 d-flex wrap-col">
+                        <div class="card">
+                            <div class="card-text">
+                                <i class="fa fa-plane" aria-hidden="true"></i>
+                                <p>Middle Marketing</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="card-i">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="col-4 d-flex wrap-col">
+                        <div class="card">
+                            <div class="card-text">
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <p>Legal Consulting</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="card-i">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="col-4 d-flex wrap-col">
+                        <div class="card">
+                            <div class="card-text">
+                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                                <p>Regulatory Risk</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="card-i">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </div>
+                        </div>                       
                     </div>
                 </div>
             </div>
             
         </section>
         <!-- 4 sezione team -->
-        <section>
+        <section class="team">
+            <div class="container">
+                <h4>we like what we do</h4>
+                <div class="row">
+                    <div class="col-9">
+                        <div class="section-title">
+                            <span class="hover-title light">
+                                <h1>Team</h1>
+                            </span>
+                            <span>
+                                <h1>of Experts</h1>
+                            </span>
+                        </div>
+                        <p>Ethics and integrity are the bases on which our professionals built their careers.</p>
+                        <p>They are fundamentals that bacome daily attitudes.</p>
+                        <div class="row wrap-col">
+                            <div class="col-6">
+                                <div class="card team-card">
+                                    <div class="team-pic">
+                                        <img src="src/images/team-1.jpg" alt="profile picture">
+                                    </div>
+                                    <div class="team-info d-flex-col">
+                                        <h3>David Cooper</h3>
+                                        <h4>CTO & co-founder</h4>
+                                        <div class="team-social d-flex">
+                                            <!-- d-flex per icon -->
+                                            <span class="i-cover">
+                                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            </span>
+                                            <span class="i-cover">
+                                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            </span>
+                                            <span class="i-cover">
+                                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card team-card">
+                                    <div class="team-pic">
+                                        <img src="src/images/team-3.jpg" alt="profile picture">
+                                    </div>
+                                    <div class="team-info d-flex-col">
+                                        <h3>Oliver Jones</h3>
+                                        <h4>chief procurement</h4>
+                                        <div class="team-social d-flex">
+                                            <span class="i-cover">
+                                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            </span>
+                                            <span class="i-cover">
+                                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            </span>
+                                            <span class="i-cover">
+                                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card team-card">
+                                    <div class="team-pic">
+                                        <img src="src/images/team-2.jpg" alt="profile picture">
+                                    </div>
+                                    <div class="team-info d-flex-col">
+                                        <h3>Emma Lopez</h3>
+                                        <h4>chief marketing</h4>
+                                        <div class="team-social d-flex">
+                                            <span class="i-cover">
+                                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            </span>
+                                            <span class="i-cover">
+                                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            </span>
+                                            <span class="i-cover">
+                                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card team-card">
+                                    <div class="team-pic">
+                                        <img src="src/images/team-4.jpg" alt="profile picture">
+                                    </div>
+                                    <div class="team-info d-flex-col">
+                                        <h3>T. Johnson</h3>
+                                        <h4>CEO and president</h4>
+                                        <div class="team-social d-flex">
+                                            <span class="i-cover">
+                                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            </span>
+                                            <span class="i-cover">
+                                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            </span>
+                                            <span class="i-cover">
+                                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                    <div class="col-3">
+                        <div class="card speech-card">
+                            <h3>President Speech</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum similique pariatur ea.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quos nobis ipsum quibusdam quas repellat natus autem necessitatibus voluptate! Quae molestias porro nulla.</p>
+                            <div class="d-flex">
+                                <span>T.Johnson</span>
+                                <span class="blank-space"></span>
+                                <span>
+                                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                </span>
+
+                            </div>
+                            
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- 5 sezione news -->
-        <section>
+        <section class="news">
+            <div class="container">
+                <h4>our editorial content</h4>
+                <div class="section-title">
+                    <span>
+                        <h1>Latest</h1>
+                    </span>
+                    <span class="hover-title light">
+                        <h1>News</h1>
+                    </span>
+                </div>
+                <div class="d-flex">
+                    <p>Every week we push content about what is best in the business world.</p>
+                    <div class="blank-space">
 
+                    </div>
+                    <button class="btn-default">see all</button>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card news-card">
+                            <img src="src/images/news-1.jpg" alt="girl writing notes">
+                            <h3>increasing creativity is possible for everyone</h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card news-card">
+                            <img src="src/images/news-2.jpg" alt="boy staring in the sun">
+                            <h3>because market research is part of the business plan</h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card news-card">
+                            <img src="src/images/news-3.jpg" alt="girl looking at the phen">
+                            <h3>working from home is now a trend</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- 6 sezione knows -->
-        <section>
+        <section class="knows">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h4>we like what we do</h4>
+                        <div class="section-title">
+                            <span class="hover-title dark">
+                                <h1>Know</h1>
+                            </span>
+                            <span>
+                                <h1>First</h1>
+                            </span>
+                        </div>
+                        <p>Follow closely and receive content about our company and the news of the current market</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="my-form f-dark">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Email">
+                            <div class="d-flex">
+                                <button class="btn-default">subscribe</button>
+                                <span class="blank-space"></span>
+                            </div>
+                            
+                        </div>                        
+                    </div>
+                    <div class="col-2">
+                        <!-- solo per layout -->
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
         <!-- 7 sezione touch -->
@@ -194,12 +461,25 @@
     </main>
     <!-- mantenendo proporzioni header footer ha due section-->
     <footer>
-        <div class="primary-footer">
-
-        </div>
-        <div class="secondary-footer">
-
-        </div>
+              
+            <div class="primary-footer">
+                
+            </div>
+            <div class="secondary-footer">
+                <div class="container">  
+                    <div class="d-flex">
+                        <div>
+                            <p>Enjoy the low price. We are tracking any intention of piracy </p>
+                        </div>
+                        <div class="blank-space"></div>
+                        <div> 
+                            <p>
+                                &copy 2020 NEXGEN is Proudly Powered by <span class="blue">Codings</span>.
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
     </footer>
     
 </body>

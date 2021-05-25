@@ -1,0 +1,18 @@
+.secondary-footer{
+    .d-flex{
+        justify-content: center;
+        align-items: center;
+    }
+    background-color: $primary_color_black;
+    color: $secondary_color_white;
+    span{
+        &.blue{
+            color: $primary_color_blue;
+        }
+    }
+}
+.primary-footer{
+    background-image: url('../images/bg-7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

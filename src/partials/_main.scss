@@ -38,17 +38,134 @@
 }
 //section 2 : RESULTS
 .results{
-    //background-image: url('../images/bg-1.jpg');
+    background-image: url('../images/bg-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: wheat;
+    
     .section-title{
         color: $primary_color_white;
     }
     .row{
-        p, h2{
-            color: $primary_color_white;
+        justify-content: space-around;
+        p{
             text-align: center;
+            color: $primary_color_white;
         }
+        h2{
+            text-align: center;
+            color: $primary_color_blue;
+        }
+    }
+}
+//section 3 : SERVICES
+.services {
+    background-color: $primary_color_black;
+    p {
+        color: $secondary_color_white;
+    }
+    .card {
+        background-color: $secondary_color_dark_gray;
+        color: $primary_color_white;
+        margin: $spacing;
+    }
+    
+}
+//section 4 : TEAM
+.team{
+    .team-pic{
+        height: 160px;
+        width: 140px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: $sm-radius;
+        }
+    }
+    .team-info{
+        justify-content: space-around;
+        align-items: center;
+        padding: $spacing;
+
+        h1{
+            font-size: $font_size * 1.2;
+        }
+        h4{
+            font-size: $font_size;
+            color: $secondary_color_dark_gray;
+            font-weight: 400;
+        }
+        
+        .team-social{
+            justify-content: space-around;
+            
+            .i-cover{
+                display: flex;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+                align-items: center;
+                border-radius: 50%;
+                background-color: $secondary_color_blue;
+                margin: $spacing / 2;
+                a {                
+                    color: $primary_color_blue;
+                    i {
+                        font-size: $font_size * 1.2;    
+                    }
+                    
+                }
+            }
+        }
+    }
+    .speech-card{
+        flex-direction: column;
+        background-color: $primary_color_blue;
+        color: $secondary_color_white;
+        height: 100%;
+        justify-content: space-around;
+        h3 {
+            color: $primary_color_white;
+        }
+        span {
+            display: inline-block;
+            color: $primary_color_white;
+            i {
+                font-size: 1.5 * $font_size;
+                color: $secondary_color_dark
+            }
+        }
+        
+    }
+}
+//section 5 : NEWS
+.news {
+    background-color: $bg_color_grey;
+    .news-card {
+        position: relative;
+        height: 250px; 
+        width: 100%;             
+        img {
+            border-radius: $lg-radius;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h3 {
+            position: absolute;
+            display: inline-block;
+            text-align: center;
+            bottom: $spacing * 3;
+            color: $primary_color_white;
+            padding: 1.2 * $spacing;
+            margin-right: $spacing;
+        }
+    }
+}
+//section 6: KNOWS       
+.knows {
+    background-color: $primary_color_black;
+    p {
+        color: $secondary_color_white;
     }
 }

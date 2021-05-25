@@ -1,0 +1,27 @@
+.my-form{
+    display: flex;
+    flex-direction: column;
+    &.f-dark{
+      input{
+        background-color: $secondary_color_dark_gray;
+        color: $secondary_color_white;
+        border: 1px solid $secondary_color_dark_gray;
+      }
+    }
+    &.f-light{
+      input{
+        background-color: $secondary_color_white;
+        color: $primary_color_black;
+        border: 1px solid $secondary_color_dark_gray;
+      }
+    }
+    input {
+      padding: $spacing / 2;
+      margin: $spacing 0;
+      border-radius: $sm-radius;
+    }
+  }
+  input:focus,
+  input:active{
+      outline: none;
+  }

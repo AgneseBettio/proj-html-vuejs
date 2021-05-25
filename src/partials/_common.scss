@@ -1,31 +1,34 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
-.bg-img{
-  background-repeat: no-repeat;
-  background-size: 100%;
-}  
+//.bg-img{
+//   background-repeat: no-repeat;
+//   background-size: 100%;
+// }  
 body {
   font-family: $font_family;
   font-size: $font_size;
 }
 .container {
-    width: 1100px;
+    width: 1200px;
     margin: auto;
     padding: 0 ($spacing * 2);
 }
 section{
-  padding: 2 * $spacing;
+  padding: 2.5 * $spacing;
 }
 .d-flex{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
 }
 .blank-space{
   flex-grow: 2;
+}
+.blank-space-sm{
+  flex-grow: 0;
 }
 .extra-marg{
   margin: $spacing;
@@ -40,9 +43,26 @@ section{
 .row {
   display: flex;
   margin: 0 (-($spacing / 2));
-  justify-content: center;
+  // justify-content: center;
 
   [class^="col-"] {
     padding: 0 ($spacing / 2);
   }
+}
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: calc((100% / 12) * #{$i});
+  }
+}
+.d-flex-col{
+  display: flex;
+  flex-direction: column;
+} 
+.wrap-col{
+  flex-wrap: wrap;
+}
+.card {
+  padding: $spacing * 1.5;
+  border-radius: $lg-radius;
+  display: flex;
 }

@@ -7,6 +7,7 @@
     border-radius: $sm-radius;
     padding: ($spacing/2) $spacing;
     background-color: transparent;
+    min-width: 35px;
 
     &:hover {
         background-color: $primary_color_blue;
