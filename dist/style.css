@@ -211,7 +211,14 @@ ul li a i {
 }
 
 .results {
-  background-image: url("../imgages/bg-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: wheat;
+}
+.results .section-title {
+  color: #ffffff;
+}
+.results .row p, .results .row h2 {
+  color: #ffffff;
+  text-align: center;
 }

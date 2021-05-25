@@ -38,7 +38,17 @@
 }
 //section 2 : RESULTS
 .results{
-    background-image: url('../images/bg-1.jpg');
+    //background-image: url('../images/bg-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: wheat;
+    .section-title{
+        color: $primary_color_white;
+    }
+    .row{
+        p, h2{
+            color: $primary_color_white;
+            text-align: center;
+        }
+    }
 }
