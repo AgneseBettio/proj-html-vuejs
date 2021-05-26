@@ -1,8 +1,11 @@
 .my-form{
+
     display: flex;
     flex-direction: column;
+    
     &.f-dark{
       input{
+        font-size: $font_size;
         background-color: $secondary_color_dark_gray;
         color: $secondary_color_white;
         border: 1px solid $secondary_color_dark_gray;
@@ -10,18 +13,43 @@
     }
     &.f-light{
       input{
+        font-size: $font_size;
         background-color: $secondary_color_white;
         color: $primary_color_black;
-        border: 1px solid $secondary_color_dark_gray;
+        border: none;
+        flex-basis: 48%;
       }
+      textarea {
+        min-height: 300px;
+        width: 100%;
+        font-size: $font_size;
+        padding: $spacing / 2;
+        border-radius: $sm-radius;
+        background-color: $secondary_color_white;
+        color: $primary_color_black;
+        border: none;
+        line-height: $line_height;
+        resize: none;
+        margin: $spacing 0;
+
+      }
+      textarea:focus,
+      textarea:active{
+        outline: none;
+      } 
     }
     input {
       padding: $spacing / 2;
       margin: $spacing 0;
       border-radius: $sm-radius;
     }
-  }
-  input:focus,
-  input:active{
-      outline: none;
-  }
+    input:focus,
+    input:active {
+        outline: none;
+    }
+    .row{
+      margin: 0;
+      justify-content: space-between;
+    }
+    
+}

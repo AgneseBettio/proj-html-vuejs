@@ -124,24 +124,6 @@
         
         .team-social{
             justify-content: space-around;
-            
-            .i-cover{
-                display: flex;
-                justify-content: center;
-                width: 35px;
-                height: 35px;
-                align-items: center;
-                border-radius: 50%;
-                background-color: $secondary_color_blue;
-                margin: $spacing / 2;
-                a {                
-                    color: $primary_color_blue;
-                    i {
-                        font-size: $font_size * 1.2;    
-                    }
-                    
-                }
-            }
         }
     }
     .speech-card{
@@ -226,3 +208,4 @@
         color: $secondary_color_white;
     }
 }
+//sectio 7 : TOUCH

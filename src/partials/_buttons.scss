@@ -2,13 +2,17 @@
     text-transform: uppercase;
     color: $primary_color_white;
     text-decoration: none;
-    transition: background-color $transition_duration;
+    transition: $transition_duration;
     border: 2px solid $primary_color_blue;
     border-radius: $sm-radius;
     padding: ($spacing/2) $spacing;
     background-color: transparent;
-    min-width: 35px;
-    &.btn-blue {background-color: $primary_color_blue;
+    min-width: 120px;
+    &.btn-blue {
+        background-color: $primary_color_blue;
+    }
+    &.font-blue{
+        color: $primary_color_blue;
 
     }
 
@@ -19,5 +23,27 @@
             transform: scale(1.1, 1.1);
 
         }
+        &.font-blue{
+            color: $primary_color_white;
+        }
+    }
+}
+
+//cover per span
+.i-cover{
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $secondary_color_blue;
+    margin: $spacing / 2;
+    a {                
+        color: $primary_color_blue;
+        i {
+            font-size: $font_size * 1.2;    
+        }
+        
     }
 }

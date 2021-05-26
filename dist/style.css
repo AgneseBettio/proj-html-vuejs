@@ -114,6 +114,10 @@ section {
   flex-wrap: wrap;
 }
 
+.c-flex {
+  align-items: center;
+}
+
 .card {
   padding: 22.5px;
   border-radius: 8px;
@@ -141,15 +145,18 @@ section {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-  transition: background-color 0.4s;
+  transition: 0.4s;
   border: 2px solid #098081;
   border-radius: 4px;
   padding: 7.5px 15px;
   background-color: transparent;
-  min-width: 35px;
+  min-width: 120px;
 }
 .btn-default.btn-blue {
   background-color: #098081;
+}
+.btn-default.font-blue {
+  color: #098081;
 }
 .btn-default:hover {
   background-color: #098081;
@@ -157,6 +164,26 @@ section {
 }
 .btn-default:hover.btn-blue {
   transform: scale(1.1, 1.1);
+}
+.btn-default:hover.font-blue {
+  color: #ffffff;
+}
+
+.i-cover {
+  display: flex;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #DAECED;
+  margin: 7.5px;
+}
+.i-cover a {
+  color: #098081;
+}
+.i-cover a i {
+  font-size: 19.2px;
 }
 
 .logo span {
@@ -218,24 +245,47 @@ section .section-title span.dark {
   flex-direction: column;
 }
 .my-form.f-dark input {
+  font-size: 16px;
   background-color: #19191F;
-  color: #bcbdbd;
+  color: #ECECEC;
   border: 1px solid #19191F;
 }
 .my-form.f-light input {
-  background-color: #bcbdbd;
+  font-size: 16px;
+  background-color: #ECECEC;
   color: #111117;
-  border: 1px solid #19191F;
+  border: none;
+  flex-basis: 48%;
+}
+.my-form.f-light textarea {
+  min-height: 300px;
+  width: 100%;
+  font-size: 16px;
+  padding: 7.5px;
+  border-radius: 4px;
+  background-color: #ECECEC;
+  color: #111117;
+  border: none;
+  line-height: 1.5;
+  resize: none;
+  margin: 15px 0;
+}
+.my-form.f-light textarea:focus,
+.my-form.f-light textarea:active {
+  outline: none;
 }
 .my-form input {
   padding: 7.5px;
   margin: 15px 0;
   border-radius: 4px;
 }
-
-input:focus,
-input:active {
+.my-form input:focus,
+.my-form input:active {
   outline: none;
+}
+.my-form .row {
+  margin: 0;
+  justify-content: space-between;
 }
 
 /* File specifici per varie sezioni del mio sito */
@@ -253,7 +303,7 @@ header .container {
   min-height: 50px;
   background-color: #21333E;
   font-size: 12px;
-  color: #bcbdbd;
+  color: #ECECEC;
 }
 .secondary-nav .business-hours {
   justify-content: center;
@@ -315,7 +365,7 @@ header .container {
   min-height: 600px;
 }
 .hero .centered-content {
-  color: #bcbdbd;
+  color: #ECECEC;
 }
 .hero .centered-content button {
   margin: 15px 7.5px;
@@ -379,7 +429,7 @@ header .container {
   background-color: #111117;
 }
 .services p {
-  color: #bcbdbd;
+  color: #ECECEC;
 }
 .services .card {
   background-color: #19191F;
@@ -438,26 +488,10 @@ header .container {
 .team .team-info .team-social {
   justify-content: space-around;
 }
-.team .team-info .team-social .i-cover {
-  display: flex;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #DAECED;
-  margin: 7.5px;
-}
-.team .team-info .team-social .i-cover a {
-  color: #098081;
-}
-.team .team-info .team-social .i-cover a i {
-  font-size: 19.2px;
-}
 .team .speech-card {
   flex-direction: column;
   background-color: #098081;
-  color: #bcbdbd;
+  color: #ECECEC;
   height: 100%;
   justify-content: space-around;
 }
@@ -506,7 +540,7 @@ header .container {
 .news .news-card .news-hover {
   opacity: 0;
   padding: 7.5px;
-  color: #bcbdbd;
+  color: #ECECEC;
   align-items: center;
   position: absolute;
   width: 100%;
@@ -531,14 +565,14 @@ header .container {
   background-color: #111117;
 }
 .knows p {
-  color: #bcbdbd;
+  color: #ECECEC;
 }
 
 .secondary-footer {
   min-height: 50px;
   padding: 15px;
   background-color: #111117;
-  color: #bcbdbd;
+  color: #ECECEC;
 }
 .secondary-footer .d-flex {
   justify-content: center;
@@ -556,7 +590,7 @@ header .container {
   padding: 45px 0 135px 0;
 }
 .primary-footer .company-info {
-  color: #bcbdbd;
+  color: #ECECEC;
 }
 .primary-footer .company-info ul {
   list-style: none;
@@ -589,11 +623,11 @@ header .container {
   margin: 7.5px 0 7.5px 0;
 }
 .primary-footer .footer-card ul li i {
-  color: #bcbdbd;
+  color: #ECECEC;
   margin-right: 15px;
   font-weight: 300;
 }
 .primary-footer .footer-card ul li a {
   text-decoration: none;
-  color: #bcbdbd;
+  color: #ECECEC;
 }

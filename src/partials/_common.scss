@@ -62,6 +62,9 @@ section{
 .wrap-col{
   flex-wrap: wrap;
 }
+.c-flex{
+  align-items: center;
+}
 .card {
   padding: $spacing * 1.5;
   border-radius: $lg-radius;
