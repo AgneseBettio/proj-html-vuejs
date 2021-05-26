@@ -12,6 +12,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  color: #111117;
 }
 
 .container {
@@ -21,7 +22,7 @@ body {
 }
 
 section {
-  padding: 37.5px;
+  padding: 45px;
 }
 
 .d-flex {
@@ -50,6 +51,7 @@ section {
 .row {
   display: flex;
   margin: 0 -7.5px;
+  justify-content: center;
 }
 .row [class^=col-] {
   padding: 0 7.5px;
@@ -130,9 +132,15 @@ section {
   background-color: transparent;
   min-width: 35px;
 }
+.btn-default.btn-blue {
+  background-color: #098081;
+}
 .btn-default:hover {
   background-color: #098081;
   cursor: pointer;
+}
+.btn-default:hover.btn-blue {
+  transform: scale(1.1, 1.1);
 }
 
 .logo span {
@@ -220,11 +228,45 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+header .container {
+  justify-content: center;
+  align-items: center;
+}
 
 .secondary-nav {
+  min-height: 50px;
   background-color: #21333E;
   font-size: 12px;
   color: #bcbdbd;
+}
+.secondary-nav .business-hours {
+  justify-content: center;
+  align-items: center;
+}
+.secondary-nav p {
+  margin: 0 15px 0 7.5px;
+}
+.secondary-nav ul {
+  margin-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondary-nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondary-nav ul li a {
+  display: inline-block;
+  padding: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+.secondary-nav ul li a i {
+  color: #ffffff;
 }
 
 .primary-nav {
@@ -245,9 +287,12 @@ header {
   padding: 15px;
   color: #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
 }
 .primary-nav ul li a i {
   margin-right: 5px;
+  color: #ffffff;
 }
 
 .hero {
@@ -324,6 +369,30 @@ header {
   background-color: #19191F;
   color: #ffffff;
   margin: 15px;
+}
+.services .card:hover {
+  transform: scale(1.1);
+}
+.services .card .card-text h3 {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.services .card .card-text i {
+  font-size: 32px;
+  color: #098081;
+}
+.services .card .card-i {
+  height: 19.5px;
+  width: 19.5px;
+  padding: 15px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s;
+}
+.services .card .card-i:hover {
+  background-color: #098081;
+  cursor: pointer;
 }
 
 .team .team-pic {
@@ -421,6 +490,8 @@ header {
 }
 
 .secondary-footer {
+  min-height: 50px;
+  padding: 15px;
   background-color: #111117;
   color: #bcbdbd;
 }
@@ -433,20 +504,44 @@ header {
 }
 
 .primary-footer {
+  color: #ffffff;
   background-image: url("../images/bg-7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px;
+  padding: 45px 0 135px 0;
+}
+.primary-footer .company-info {
+  color: #bcbdbd;
+}
+.primary-footer .company-info ul {
+  list-style: none;
+}
+.primary-footer .company-info ul li {
+  text-decoration: none;
+  margin: 7.5px 0 7.5px 0;
+}
+.primary-footer .company-info ul li i {
+  margin-right: 15px;
+  font-size: 16px;
+}
+.primary-footer .company-info button {
+  margin-top: 15px;
 }
 .primary-footer .footer-card {
-  background-color: rgba(188, 189, 189, 0.2);
+  width: calc((100% / 12) * 4);
+  background-color: rgba(188, 189, 189, 0.1);
+  flex-direction: column;
+  margin: 0 15px;
 }
 .primary-footer .footer-card ul {
   margin-left: 0;
   list-style: none;
 }
 .primary-footer .footer-card ul li {
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
+  margin: 7.5px 0 7.5px 0;
 }
 .primary-footer .footer-card ul li i {
   color: #bcbdbd;

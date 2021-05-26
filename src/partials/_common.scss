@@ -10,6 +10,7 @@
 body {
   font-family: $font_family;
   font-size: $font_size;
+  color: $primary_color_black;
 }
 .container {
     width: 1200px;
@@ -17,7 +18,7 @@ body {
     padding: 0 ($spacing * 2);
 }
 section{
-  padding: 2.5 * $spacing;
+  padding: 3 * $spacing;
 }
 .d-flex{
   display: flex;
@@ -43,7 +44,7 @@ section{
 .row {
   display: flex;
   margin: 0 (-($spacing / 2));
-  // justify-content: center;
+  justify-content: center;
 
   [class^="col-"] {
     padding: 0 ($spacing / 2);

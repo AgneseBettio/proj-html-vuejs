@@ -8,9 +8,16 @@
     padding: ($spacing/2) $spacing;
     background-color: transparent;
     min-width: 35px;
+    &.btn-blue {background-color: $primary_color_blue;
+
+    }
 
     &:hover {
         background-color: $primary_color_blue;
         cursor: pointer;
+        &.btn-blue {
+            transform: scale(1.1, 1.1);
+
+        }
     }
 }

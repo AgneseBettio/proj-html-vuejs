@@ -1,28 +1,57 @@
 .secondary-footer{
-    .d-flex{
+    min-height: 50px;
+    padding: $spacing;
+    .d-flex {
         justify-content: center;
         align-items: center;
     }
     background-color: $primary_color_black;
     color: $secondary_color_white;
-    span{
+    span {
         &.blue{
             color: $primary_color_blue;
         }
     }
 }
 .primary-footer{
+    color:$primary_color_white;
     background-image: url('../images/bg-7.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding:  2 * $spacing;
+    padding: (3 * $spacing) 0 (9 * $spacing) 0 ;
+    
+    //scheda info xs - vue
+    .company-info {
+        color: $secondary_color_white;
+        ul{
+            list-style: none;
+            li{
+                text-decoration: none;
+                margin: ($spacing / 2) 0 ($spacing / 2) 0;
+                i {
+                    margin-right: $spacing;
+                    font-size: $font_size;
+                }
+            }
+        }
+        button {
+            margin-top: $spacing;
+        }
+        //cards stampate - vue
+    }
     .footer-card {
+        width: calc((100% / 12) * 4);
         background-color: $secondary_color_white_transp;
+        flex-direction: column;
+        margin:  0 $spacing;
         ul{
             margin-left: 0;
             list-style: none;
             li {
+                justify-content: center;
+                align-items: center;
                 text-decoration: none;
+                margin: ($spacing / 2) 0 ($spacing / 2) 0;
                 i {
                     color: $secondary_color_white;
                     margin-right: $spacing;

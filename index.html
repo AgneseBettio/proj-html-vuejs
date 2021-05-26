@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>NextGen business-consulting</title>
     <!-- fontAwsome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- googleFonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
-
     <!-- css -->
     <link rel="stylesheet" href="dist/style.css">
     <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-    <title>NextGen business-consulting</title>
+    
 </head>
 
 <body>
@@ -26,35 +25,23 @@
         <header>
             <nav class="secondary-nav">
                 <div class="container d-flex">
-                    <div class="business-hours">
+                    <div class="business-hours d-flex">
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        Open Hours: Mon - Sat 9:00 - 18:00
+                        <p>Open Hours: Mon - Sat 9:00 - 18:00</p> 
                     </div>
                     <div class="blank-space">                    
                     </div>
                     <!--  verrà stampata con vue tramite v-for :class x icon -->
-                    <ul>
-                        <li v-for="el in companyData" v-if=" el.show_header == 'true'">
-                            <span v-if="el.icon">
-                                <i class="fa" :class="el.icon" aria-hidden="true"></i>
-                                {{el.text}}
-                            </span>
-                            
-                        </li>
-                        <!-- <li>
-                            <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>hello@example.com</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li> -->
-                    </ul>
-                
+                    <div class="company-info">
+                        <ul>
+                            <li v-for="el in companyData" v-if="el.show_header">
+                                    <i class="fa" :class="el.icon" v-if="el.icon" aria-hidden="true"></i>
+                                    <p>{{el.text}}</p> 
+
+                                    <a v-for="el in el.social_link" :href="el.link"> <i class="fa" :class="el.icon" aria-hidden="true"></i></a>                     
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <!-- link tramite ciclo v-for: a parti main relative -->
@@ -75,14 +62,12 @@
                     <!-- verrà stampata con vue tramite v-for -->
                     <ul>
                         <li v-for="el in navBarLinks">
-                            <a :href="el.link" v-if="el.link"> {{el.text}} </a>
-                            <span v-else-if="el.icon">
-                                <a :href="el.link" >
-                                    <i class="fa" :class="el.icon" aria-hidden="true"></i>
-                                </a>
-                            </span>
+                            <a :href="el.link">                                
+                                <i class="fa" class="fa" :class="el.icon"></i>
+                                {{el.text}}
+                            </a>                                                    
                         </li>                        
-                        <button class="btn-default"> get in touch </button>
+                        <button class="btn-default btn-blue"> get in touch </button>
                     </ul>
                 </div>
             </nav>
@@ -91,7 +76,7 @@
                     <h1 class="hero-title extra-marg">Financial Risk</h1>
                     <p class="extra-marg">The right outcomes depend on continuous rigor in governance, models, and processes across the finance function.</p>
                     <button class="btn-default">get in touch</button>
-                    <button class="btn-default">read more</button>
+                    <button class="btn-default btn-blue">read more</button>
                 </div>
             </div>
         </header>
@@ -137,24 +122,26 @@
                 </div>
                 <!-- stampa tramite vue v-for array oggetti numero + title -->
                 <!-- sistemo padding row in linea con container -->
-                <div class="row">
-                    <div class="col-3">
-                        <h2>128</h2>
-                        <p>Certifications</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <h2>128</h2>
+                            <p>Certifications</p>
+                        </div>
+                        <div class="col-3">
+                            <h2>128</h2>
+                            <p>Certifications</p>
+                        </div>
+                        <div class="col-3">
+                            <h2>128</h2>
+                            <p>Certifications</p>
+                        </div>
+                        <div class="col-3">
+                            <h2>128</h2>
+                            <p>Certifications</p>
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <h2>128</h2>
-                        <p>Certifications</p>
-                    </div>
-                    <div class="col-3">
-                        <h2>128</h2>
-                        <p>Certifications</p>
-                    </div>
-                    <div class="col-3">
-                        <h2>128</h2>
-                        <p>Certifications</p>
-                    </div>
-                </div>
+                </div>   
             </section>
             <!-- 3 sezione services id per collegamento link vue -->
             <section class="services " id="services">
@@ -168,12 +155,15 @@
                             <h1>Services</h1>
                         </span>
                     </div>
-                    <div class="row ">
+                    <div class="row">
                         <div class="col-8">
                             <p>we are leaders in providing consultancing services with a set of cutting-edge technologies and a team of experienced and renowed professionals. There are some options that you can hire.</p>
                         </div>
                         <div class="col-4 btn-box">
-                            <button class="btn-default">see all</button>
+                            <div class="d-flex">
+                                <div class="blank-space"></div>
+                                <button class="btn-default">see all</button>
+                            </div>                       
                         </div>
                     </div>
                     <div class="row wrap-col">
@@ -181,10 +171,10 @@
                             <div class="card">
                                 <div class="card-text">
                                     <i class="fa fa-sitemap" aria-hidden="true"></i>
-                                    <p>Audit and Assurance</p>
+                                    <h3>Audit and Assurance</h3>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
-                                <div class="card-i">
+                                <div class="card-i d-flex">
                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                 </div>
                             </div>                       
@@ -193,10 +183,10 @@
                             <div class="card">
                                 <div class="card-text">
                                     <i class="fa fa-briefcase" aria-hidden="true"></i>
-                                    <p>Financial Advisoring</p>
+                                    <h3>Financial Advisoring</h3>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
-                                <div class="card-i">
+                                <div class="card-i d-flex">
                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                 </div>
                             </div>                       
@@ -205,10 +195,10 @@
                             <div class="card">
                                 <div class="card-text">
                                     <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                                    <p>Analytics and M&Aand</p>
+                                    <h3>Analytics and M&Aand</h3>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
-                                <div class="card-i">
+                                <div class="card-i d-flex">
                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                 </div>
                             </div>                       
@@ -217,10 +207,10 @@
                             <div class="card">
                                 <div class="card-text">
                                     <i class="fa fa-plane" aria-hidden="true"></i>
-                                    <p>Middle Marketing</p>
+                                    <h3>Middle Marketing</h3>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
-                                <div class="card-i">
+                                <div class="card-i d-flex">
                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                 </div>
                             </div>                       
@@ -229,10 +219,10 @@
                             <div class="card">
                                 <div class="card-text">
                                     <i class="fa fa-globe" aria-hidden="true"></i>
-                                    <p>Legal Consulting</p>
+                                    <h3>Legal Consulting</h3>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
-                                <div class="card-i">
+                                <div class="card-i d-flex">
                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                 </div>
                             </div>                       
@@ -241,10 +231,10 @@
                             <div class="card">
                                 <div class="card-text">
                                     <i class="fa fa-folder-open-o" aria-hidden="true"></i>
-                                    <p>Regulatory Risk</p>
+                                    <h3>Regulatory Risk</h3>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
-                                <div class="card-i">
+                                <div class="card-i d-flex">
                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                 </div>
                             </div>                       
@@ -401,7 +391,7 @@
                         <div class="blank-space">
 
                         </div>
-                        <button class="btn-default">see all</button>
+                        <button class="btn-default btn-blue">see all</button>
                     </div>
                     <div class="row">
                         <div class="col-4">
@@ -446,7 +436,7 @@
                                 <input type="text" placeholder="Name">
                                 <input type="text" placeholder="Email">
                                 <div class="d-flex">
-                                    <button class="btn-default">subscribe</button>
+                                    <button class="btn-default btn-blue">subscribe</button>
                                     <span class="blank-space"></span>
                                 </div>
                                 
@@ -483,46 +473,34 @@
                                         </span>                        
                                     </div>                    
                                 </div>
+                                <div class="company-info">
+                                    <ul>
+                                        <li v-for="el in companyData" v-if="el.show_footer" class="d-flex">
+                                                <i class="fa" :class="el.icon" v-if="el.icon" aria-hidden="true"></i>
+                                                <p>{{el.text}}</p> 
+            
+                                                <a v-for="el in el.social_link" :href="el.link"> <i class="fa" :class="el.icon" aria-hidden="true"></i></a>                     
+                                        </li>
+                                        <button class="btn-default"> get in touch</button>
+                                    </ul>
+                                </div>
 
                             </div>
                             <div class="col-9">
                                 <div class="d-flex">
-                                    <!-- verranno stampate 3 card con lista tramite v-for -->
-                                    <div class="col-4">
-                                        <div class="card footer-card">
-                                            <ul>
-                                                <li><h4>titolo</h4></li>
-                                                <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">testo</a></li>
-                                                <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">testo</a></li>
-                                                <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">testo</a></li>
-                                                <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">testo</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card footer-card">
-                                            <ul>
-                                                <li><h4>titolo</h4></li>
-                                                <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">testo</a></li>
-                                                <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">testo</a></li>
-                                                <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">testo</a></li>
-                                                <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">testo</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card footer-card">
-                                            <ul>
-                                                <li><h4>titolo</h4></li>
-                                                <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">testo</a></li>
-                                                <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">testo</a></li>
-                                                <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">testo</a></li>
-                                                <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">testo</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>                            
-                                </div>
-                            
+                                    <!-- verranno stampate 3 card con lista tramite v-for -->                                    
+                                    <div class="card footer-card" v-for="el in footerLinks">
+                                                                               
+                                        <h3>{{el.title}}</h3>
+                                        <ul>
+                                            <li v-for="el in el.title_list">
+                                                <i class="fa" :class="el.icon" aria-hidden="true"></i>
+                                                <a href="#">{{el.text}}</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>                          
+                                </div>                            
                             </div>
                         </div>
                     </div>

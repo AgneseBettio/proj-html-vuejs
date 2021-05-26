@@ -67,6 +67,32 @@
         background-color: $secondary_color_dark_gray;
         color: $primary_color_white;
         margin: $spacing;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .card-text {
+            h3 {
+                color: $primary_color_white;
+                text-transform: capitalize;
+            }
+            i{
+                font-size: 2 * $font_size;
+                color: $primary_color_blue;
+            }
+        }
+        .card-i{
+            height: 1.3 * $spacing;
+            width: 1.3 * $spacing;
+            padding: $spacing;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            transition: background-color $transition_duration;
+            &:hover{
+                background-color: $primary_color_blue;
+                cursor: pointer;
+            }            
+        }
     }
     
 }

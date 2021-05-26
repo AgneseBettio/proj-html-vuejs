@@ -4,34 +4,32 @@ new Vue({
     data: {
         companyData : [
             {
-                show_header: true,
-                id: 'phone',
-                text:'+1(30512)34-5678',
-                icon:'fa-phone',
-
-            },
-            {   
-                show_header: true,
-                id: 'address',
-                text:'Main Avenue 187',
-                icon:'',
-
-            },
-            // {
-            //     id: 'open_hours',
-            //     text:'Mon - Sat 9:00 - 18:00',
-            //     icon:'fa-clock-o',
-
-            // },
-            {
                 show_header: false,
+                show_footer: true,
                 id: 'business_overview',
                 text:'A Functional HTML Template for corporate and Business',
                 icon:'',
 
             },
             {
+                show_header: true,
+                show_footer: true,
+                id: 'phone',
+                text:'+1(30512)34-5678',
+                icon:'fa-phone',
+
+            },
+            {   
                 show_header: false,
+                show_footer: true,
+                id: 'address',
+                text:'Main Avenue 187',
+                icon:'fa-map-marker',
+
+            },
+            {
+                show_header: true,
+                show_footer: true,
                 id: 'email',
                 text:'hello@example.com',
                 icon:'fa-envelope',
@@ -39,6 +37,7 @@ new Vue({
             },
             {
                 show_header: true,
+                show_footer: false,
                 id:"social",
                 social_link : [
                     {
@@ -71,7 +70,7 @@ new Vue({
             },
             {
                 text: 'services',
-                link: '#',
+                link: '#services',
             },
             {
                 text: 'team',
@@ -86,5 +85,138 @@ new Vue({
                 icon: 'fa-user',
             }
         ],
+
+        footerLinks : [
+            {
+                title: 'About',
+                title_list : [
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'The company',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Istituttional',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Social Events',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Innovation',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Enviroment',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Technology',
+                        
+                    },
+
+                ],
+            },
+            {
+                title: 'Services',
+                title_list : [
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'The company',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Istituttional',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Social Events',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Innovation',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Enviroment',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Technology',
+                        
+                    },
+
+                ],
+            },
+            {
+                title: 'Support',
+                title_list : [
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'The company',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Istituttional',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Social Events',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Innovation',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Enviroment',
+                        
+                    },
+                    {
+                        icon: 'fa-angle-right',
+                        text: 'Technology',
+                        
+                    },
+
+                ],
+            },                
+            // {
+            //     title: 'Services',
+            //     list : [
+            //         'The company',
+            //         'Istituttional',
+            //         'Social Events',
+            //         'Innovation',
+            //         'Enviroment',
+            //         'Technology'
+            //     ]
+            // },
+            // {
+            //     title: 'Support',
+            //     list : [
+            //         'The company',
+            //         'Istituttional',
+            //         'Social Events',
+            //         'Innovation',
+            //         'Enviroment',
+            //         'Technology'
+            //     ]
+            // },
+        ]
     },
 })
