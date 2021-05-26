@@ -67,3 +67,18 @@ section{
   border-radius: $lg-radius;
   display: flex;
 }
+
+
+// attributi per aggiungere margin
+.mgt {
+  margin-top: $spacing / 2;
+}
+.mgb {
+  margin-bottom: $spacing / 2;
+}
+.mgl {
+  margin-left: $spacing / 2;
+}
+.mgr {
+  margin-right: $spacing / 2;
+}
