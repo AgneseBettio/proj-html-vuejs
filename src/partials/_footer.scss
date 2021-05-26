@@ -15,4 +15,24 @@
     background-image: url('../images/bg-7.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    padding:  2 * $spacing;
+    .footer-card {
+        background-color: $secondary_color_white_transp;
+        ul{
+            margin-left: 0;
+            list-style: none;
+            li {
+                text-decoration: none;
+                i {
+                    color: $secondary_color_white;
+                    margin-right: $spacing;
+                    font-weight: 300;
+                }
+                a {
+                    text-decoration: none;
+                    color: $secondary_color_white
+                }
+            } 
+        }
+    }
 }

@@ -9,31 +9,33 @@ header{
     color: $secondary_color_white;
 }
 .primary-nav{
-    height: ($spacing * 2) * 2;   
-}
-ul {
-    margin-left: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    li {
-        &:hover{
-            transform: scale(1.2, 1.2);
-        }  
-         a {
-            display: inline-block;
-            padding: $spacing;
-            color: $primary_color_white;
-            text-decoration: none;
-            i {
-                margin-right: $spacing / 3;
-            }
-        }
-    }
+    height: ($spacing * 2) * 2;  
+    ul {
+        margin-left: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     
+        li {
+            &:hover{
+                transform: scale(1.2, 1.2);
+            }  
+             a {
+                display: inline-block;
+                padding: $spacing;
+                color: $primary_color_white;
+                text-decoration: none;
+                i {
+                    margin-right: $spacing / 3;
+                }
+            }
+        } 
+    }
 }
+
+    
+
 .hero {
     min-height: 600px;
     .centered-content{

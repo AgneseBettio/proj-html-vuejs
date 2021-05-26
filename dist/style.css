@@ -230,24 +230,23 @@ header {
 .primary-nav {
   height: 60px;
 }
-
-ul {
+.primary-nav ul {
   margin-left: 0;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-ul li:hover {
+.primary-nav ul li:hover {
   transform: scale(1.2, 1.2);
 }
-ul li a {
+.primary-nav ul li a {
   display: inline-block;
   padding: 15px;
   color: #ffffff;
   text-decoration: none;
 }
-ul li a i {
+.primary-nav ul li a i {
   margin-right: 5px;
 }
 
@@ -437,4 +436,24 @@ ul li a i {
   background-image: url("../images/bg-7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 30px;
+}
+.primary-footer .footer-card {
+  background-color: rgba(188, 189, 189, 0.2);
+}
+.primary-footer .footer-card ul {
+  margin-left: 0;
+  list-style: none;
+}
+.primary-footer .footer-card ul li {
+  text-decoration: none;
+}
+.primary-footer .footer-card ul li i {
+  color: #bcbdbd;
+  margin-right: 15px;
+  font-weight: 300;
+}
+.primary-footer .footer-card ul li a {
+  text-decoration: none;
+  color: #bcbdbd;
 }
