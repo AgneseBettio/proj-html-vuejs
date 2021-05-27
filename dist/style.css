@@ -239,6 +239,9 @@ section .section-title span.dark {
   background-color: rgba(96, 169, 173, 0.6);
   color: #ffffff;
 }
+section .section-title span h1.font-white {
+  color: #ffffff;
+}
 
 .my-form {
   display: flex;

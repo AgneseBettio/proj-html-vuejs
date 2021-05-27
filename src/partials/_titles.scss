@@ -58,6 +58,12 @@ section {
                 background-color: $primary_color_blue_transp;
                 color:$primary_color_white;
             }
+            h1 {
+                &.font-white {
+                    color: $primary_color_white;
+                }
+            }
+         
         }
 
     }
